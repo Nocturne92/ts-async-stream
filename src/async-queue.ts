@@ -75,7 +75,3 @@ export class AbortableAsyncQueue<T, A = any> extends AsyncQueue<T | A> {
     }
   }
 }
-
-export async function * asyncQueueIterator<T>(queue: AsyncQueue<T>) {
-  for await (let value of queue) {}
-}
